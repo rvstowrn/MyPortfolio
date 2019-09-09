@@ -7,4 +7,5 @@ $(function(){
 	$('.datepicker').datepicker({
 		
 	});
+	$('.scrollspy').scrollSpy();
 });
