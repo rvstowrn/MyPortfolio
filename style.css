@@ -1,0 +1,29 @@
+body
+{
+	font-family: 'Oleo Script', cursive;
+	/*font-size: 150%;*/
+	background-color: #e5e5e5;
+}
+nav ul li
+{
+	/*font-size: 1.5rem;*/
+
+}
+section img{
+	    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+
+}
+#intro{
+	background: linear-gradient(to bottom,  #673AB7 0%,#673AB7 50%,#f6f6f6 50%,#f6f6f6 100%);
+	padding:5%;
+}
+#introbox
+{
+	background-color: #f6f6f6;
+	box-shadow: 0 10px 10px rgba(0,0,0,.2);	
+}
+form{
+	padding: 2%;
+	background-color: white;
+	box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
