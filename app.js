@@ -1,5 +1,7 @@
 $(function(){
-	$('.sidenav').sidenav();
+	$('.sidenav').sidenav().on('click tap', 'li a', () => {
+            $('.sidenav').sidenav('close');
+    });
 	$('.modal').modal();
 	$('.materialboxed').materialbox();
 	$('.parallax').parallax();
@@ -29,11 +31,13 @@ function darkMode(){
 	   'background' : '#121212',
 	   'color' : '#fff'
 	});
-	$('#intro').css({
+	$('#intro, .sidenav').css({
 	   'background' : '#1A1A1A',
 	   'color' : '#fff'
 	});
+	$('.sidenav>li>a').css({ 'color':'unset' });
+
 }
 function lightMode(){
-	$("#intro>div, #skills>div, #work>div>div>div, .tabs, form, body, #intro").removeAttr("style");
+	$("#intro>div, #skills>div, #work>div>div>div, .tabs, form, body, #intro, .sidenav, a").removeAttr("style");
 }
