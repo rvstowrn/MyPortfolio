@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- 	<meta charset="utf-8">
- 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Rishabh's Portfolio</title>
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 	<header>
 		<nav class="nav-wraper grey darken-3">
 			<div class="container">
-				
+
 				<a href='#' class="brand logo">Rishabh Verma's Portfolio</a>
-				
+
 				<a href="#" class="sidenav-trigger" data-target='mobile'>
 					<i class="material-icons">menu</i>
 				</a>
-				
+
 				<ul class="right hide-on-med-and-down">
 					<li><a href="#intro">Introduction</a></li>
 					<li><a href="#skills">Skills</a></li>
@@ -30,7 +34,7 @@
 					<li><a href="#work">Work Experience</a></li>
 					<li><a href="#form">Contact</a></li>
 				</ul>
-				
+
 				<ul class="sidenav" id="mobile">
 					<li><a href="#intro">Introduction</a></li>
 					<li><a href="#skills">Skills</a></li>
@@ -41,7 +45,7 @@
 
 			</div>
 			<div class='night_mode_btn'>
-			<i onclick="toggler()" class="material-icons">brightness_4</i>
+				<i onclick="toggler()" class="material-icons">brightness_4</i>
 			</div>
 		</nav>
 
@@ -50,58 +54,52 @@
 
 	</header>
 
-<div id="intro" class="scrollspy">
-        <div class="container" id="introbox">
-        	<div class="row">
-        		<div class="col s12 l4">
-        			<img src="img/scooty.jpg" class="responsive-img materialboxed"> 
-        		</div>
-        		<div class="col s12 l8">
-	        	<p class="flow-text" style="padding-left: 10px;">
-				My name is Rishabh Verma.I am a 3rd year CSE B.Tech student of 
-				SRM Institute of Science and Technology,Chennai.I have a keen 
-				interest in web and app development,machine learning and iot.
-				</p>
-				<center>
-				<a href="https://github.com/rvstowrn" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-				&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://linkedin.com/in/rishabhverma4488" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-				&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://facebook.com/rvstowrn" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-				</center>
+	<div id="intro" class="scrollspy">
+		<div class="container" data-aos="fade-up" data-aos-duration="1200" id="introbox">
+			<div class="row">
+				<div class="col s12 l4">
+					<img src="img/scooty.jpg" class="responsive-img materialboxed">
 				</div>
-			</div>	
-        </div>
-</div>
+				<div class="col s12 l8">
+					<p class="flow-text" style="padding-left: 10px;">
+						My name is Rishabh Verma.I am a 3rd year CSE B.Tech student of
+						SRM Institute of Science and Technology,Chennai.I have a keen
+						interest in web and app development,machine learning and iot.
+					</p>
+					<center>
+						<a href="https://github.com/rvstowrn" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="https://linkedin.com/in/rishabhverma4488" target="_blank"><i
+								class="fab fa-linkedin fa-2x"></i></a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="https://facebook.com/rvstowrn" target="_blank"><i
+								class="fab fa-facebook fa-2x"></i></a>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-<section class="container section scrollspy" id="skills">
+	<section class="container section scrollspy" id="skills">
 		<p class="flow-text">Skills</p>
 		<div class="row">
-			<div class="col s12 l4">
+			<div class="col s12 l4" data-aos="fade-right" data-aos-duration="1200">
 				<img src="img/web.jpg" alt="no-image" class="responsive-img materialboxed">
 			</div>
 			<div class="col s12 l6 offset-l1">
-				<!-- <p class="flow-text"><span class="indigo-text text-darken-4">FullStack Web Development</span>
-				<ul class="flow-text">
-					<li>Frontend - html,css,javascript,jquery,bootstrap and materialize</li>
-					<li>Backend - Laravel,Django,Node</li>
-					<li>Misc - MongoDB,MySQL,Canvas,Chrome Extensions</li>
-				</ul>
-				</p> -->
 				<p style="font-size: 1.3rem">
-					<span 	class="indigo-text">FullStack Web Development</span><br>
-					Frontend - html, css, javascript, jquery, bootstrap and materialize<br>
+					<span class="indigo-text">FullStack Web Development</span><br>
+					Frontend - HTML, CSS, Js, React , SCSS<br>
 					Backend - Laravel,Django,Node<br>
-					Misc - MongoDB,MySQL,Canvas,Chrome Extensions
+					Misc - MongoDB,MySQL,Chrome Extensions
 				</p>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col s12 l4 push-l8">
-				<img src="img/android.jpg" alt="no-image" 
-				class="responsive-img materialboxed">
+			<div class="col s12 l4 push-l8" data-aos="fade-left" data-aos-duration="1200">
+				<img src="img/android.jpg" alt="no-image" class="responsive-img materialboxed">
 			</div>
 			<div class="col s12 l6 pull-l3">
 				<p style="font-size: 1.3rem">
@@ -112,29 +110,28 @@
 			</div>
 		</div>
 
-		<div class="row">	
-			<div class="col s12 l4">
+		<div class="row">
+			<div class="col s12 l4" data-aos="fade-right" data-aos-duration="1200">
 				<img src="img/basic.png" alt="no-image" class="responsive-img materialboxed">
 			</div>
 			<div class="col s12 l6 offset-l1">
 				<p style="font-size: 1.3rem">
-					<span 	class="indigo-text">Basic Programming</span><br>
+					<span class="indigo-text">Basic Programming</span><br>
 					Languages - C,C++,Java,Python,Matlab<br>
 					Theoretical knowledge of basic data structures of algorithm along
 					with their implementation in various languages.
-				
+
 				</p>
 			</div>
-		</div>	
+		</div>
 
 		<div class="row">
-			<div class="col s12 l4 push-l8">
-				<img src="img/misc.jpg" alt="no-image" 
-				class="responsive-img materialboxed">
+			<div class="col s12 l4 push-l8" data-aos="fade-left" data-aos-duration="1200">
+				<img src="img/misc.jpg" alt="no-image" class="responsive-img materialboxed">
 			</div>
 			<div class="col s12 l6 pull-l3">
 				<p style="font-size: 1.3rem">
-					<span 	class="indigo-text">Miscellenous</span><br>
+					<span class="indigo-text">Miscellenous</span><br>
 					Knowledge of basic Machine Learning Algorithms<br>
 					Basic implmentation of some ML Algorithms in octave.<br>
 					Interested in Unity AR and Aurdino Coding<br>
@@ -150,182 +147,190 @@
 
 
 
-<div class="parallax-container scrollspy" id="certification">
-	<div class="parallax">
-		<img src="img/minimalism.jpg" class="responsive-img materialboxed">
+	<div class="parallax-container scrollspy" id="certification">
+		<div class="parallax">
+			<img src="img/minimalism.jpg" class="responsive-img materialboxed">
+		</div>
 	</div>
-</div>
 
 
 
-<section class="container section scrollspy" id="work" style="width: 80%;">
-<p class="flow-text">Work Experience</p>
-	
-	<div class="row">
-	
-		<div class="col s12 l5">
-		<div class="card">
-			<div class="card-image">
-				<img src="img/django.jpg" class="responsive-img materialboxed">
-				<a href="#" class="halfway-fab btn-large btn-floating">
-					<i class="material-icons">favorite</i>
-				</a>
+	<section class="container section scrollspy" id="work" style="width: 80%;">
+		<p class="flow-text">Work Experience</p>
+
+		<div class="row">
+
+			<div class="col s12 l5">
+				<div class="card" data-aos="zoom-in" data-aos-duration="1200">
+					<div class="card-image">
+						<img src="img/django.jpg" class="responsive-img materialboxed">
+						<a href="#" class="halfway-fab btn-large btn-floating">
+							<i class="material-icons">favorite</i>
+						</a>
+					</div>
+					<div class="card-content">
+						<span class="card-title">Internship</span>
+						<p>Did an internship in Tata Motors Jamshedpur where I worked on the project of Asset Management
+							System using Django Framework for backend.</p>
+					</div>
+					<div class="card-action">
+						<a href="#">for details</a>
+						<a href="#">Github Link</a>
+					</div>
+				</div>
 			</div>
-			<div class="card-content">
-				<span class="card-title">Internship</span>
-				<p>Did an internship in Tata Motors Jamshedpur where I worked on the project of Asset Management System using Django Framework for backend.</p>
+
+			<div class="col s12 l5 offset-l1">
+				<div class="card" data-aos="zoom-in" data-aos-duration="1200">
+					<div class="card-image">
+						<img src="img/tkinter.png" class="responsive-img materialboxed">
+						<a href="#" class="halfway-fab btn-large btn-floating">
+							<i class="material-icons">thumb_up</i>
+						</a>
+					</div>
+					<div class="card-content">
+						<span class="card-title">Application</span>
+						<p>Created a tkinter application for a clinic management which stores and modify patient details
+							and also print and maintain a record of patient prescriptions.</p>
+					</div>
+					<div class="card-action">
+						<a href="#">for details</a>
+						<a href="#">Github Link</a>
+					</div>
+				</div>
 			</div>
-			<div class="card-action">
-				<a href="#">for details</a>
-				<a href="#">Github Link</a>
+
+			<div class="col s12 l5">
+				<div class="card" data-aos="zoom-in" data-aos-duration="1200">
+					<div class="card-image">
+						<img src="img/fusion.png" class="responsive-img materialboxed">
+						<a href="#" class="halfway-fab btn-large btn-floating">
+							<i class="material-icons">done</i>
+						</a>
+					</div>
+					<div class="card-content">
+						<span class="card-title">Project</span>
+						<p>Contributed in the application development part of an IOT project related
+							to Municipal Garbage Collection</p>
+					</div>
+					<div class="card-action">
+						<a href="#">for details</a>
+						<a href="#">Github Link</a>
+					</div>
+				</div>
 			</div>
-		</div>	
+
+			<div class="col s12 l5 offset-l1">
+				<div class="card" data-aos="zoom-in" data-aos-duration="1200">
+					<div class="card-image">
+						<img src="img/kzilla.jpg" class="responsive-img materialboxed">
+						<a href="#" class="halfway-fab btn-large btn-floating">
+							<i class="material-icons">grade</i>
+						</a>
+					</div>
+					<div class="card-content">
+						<span class="card-title">Kzilla</span>
+						<p>Member of Technical Club of SRM Kzilla<br>Participated in Tekmux hackathon with kzilla
+							members</p>
+					</div>
+					<div class="card-action">
+						<a href="#">for details</a>
+						<a href="#">Github Link</a>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<div class="col s12 l5 offset-l1">
-		<div class="card">
-			<div class="card-image">
-				<img src="img/tkinter.png" class="responsive-img materialboxed">
-				<a href="#" class="halfway-fab btn-large btn-floating">
-					<i class="material-icons">thumb_up</i>
-				</a>
-			</div>
-			<div class="card-content">
-				<span class="card-title">Application</span>
-				<p>Created a tkinter application for a clinic management which stores and modify patient details and also print and maintain a record of patient prescriptions.</p>
-			</div>
-			<div class="card-action">
-				<a href="#">for details</a>
-				<a href="#">Github Link</a>
-			</div>
-		</div>	
-		</div>
-		
-		<div class="col s12 l5">
-		<div class="card">
-			<div class="card-image">
-				<img src="img/fusion.png" class="responsive-img materialboxed">
-				<a href="#" class="halfway-fab btn-large btn-floating">
-					<i class="material-icons">done</i>
-				</a>
-			</div>
-			<div class="card-content">
-				<span class="card-title">Project</span>
-				<p>Contributed in the application development part of an IOT project related
-				to Municipal Garbage Collection</p>
-			</div>
-			<div class="card-action">
-				<a href="#">for details</a>
-				<a href="#">Github Link</a>
-			</div>
-		</div>	
-		</div>
+		<div class="col s12 offset-l2 scrollspy">
+			<h2>Educational Background</h2>
+			<ul class="tabs">
+				<li class="tab col s6">
+					<a href="#college">College</a>
+				</li>
+				<li class="tab col s6">
+					<a href="#school">School</a>
+				</li>
+			</ul>
+			<div class="col s12" id="college">
+				<p class="flow-text">
+					2017-2021<br>
+					BTECH Computer Science and Engineering<br>
+					SRM Institute of Science and Technology<br>
+				</p>
 
-		<div class="col s12 l5 offset-l1">
-		<div class="card">
-			<div class="card-image">
-				<img src="img/kzilla.jpg" class="responsive-img materialboxed">
-				<a href="#" class="halfway-fab btn-large btn-floating">
-					<i class="material-icons">grade</i>
-				</a>
 			</div>
-			<div class="card-content">
-				<span class="card-title">Kzilla</span>
-				<p>Member of Technical Club of SRM Kzilla<br>Participated in Tekmux hackathon with kzilla members</p>
-			</div>
-			<div class="card-action">
-				<a href="#">for details</a>
-				<a href="#">Github Link</a>
-			</div>
-		</div>	
-		</div>
-	</div>	
 
-	<div class="col s12 offset-l2 scrollspy">
-		<h2>Educational Background</h2>
-		<ul class="tabs">
-			<li class="tab col s6">
-				<a href="#college">College</a>
-			</li>
-			<li class="tab col s6">
-				<a href="#school">School</a>
-			</li>
-		</ul>
-		<div class="col s12" id="college">
-			<p class="flow-text">
-				2017-2021<br>
-				BTECH Computer Science and Engineering<br>
-				SRM Institute of Science and Technology<br>    
-			</p>
-			
+			<div class="col s12" id="school">
+				<p class="flow-text">
+					12TH BOARDS-CBSE<br>
+					DAV PUBLIC SCHOOL,ADITYAPUR,JAMSHEDPUR<br>
+					PERCENTAGE-78%<br>
+					10TH BOARDS-ICSE<br>
+					DON BOSCO ACADEMY,DIGHA,PATNA<br>
+					PERCENTAGE-88%
+				</p>
+			</div>
 		</div>
+	</section>
 
-	 	<div class="col s12" id="school">
-			<p class="flow-text">
-			12TH BOARDS-CBSE<br>
-			DAV PUBLIC SCHOOL,ADITYAPUR,JAMSHEDPUR<br>
-			PERCENTAGE-78%<br>
-			10TH BOARDS-ICSE<br>
-			DON BOSCO ACADEMY,DIGHA,PATNA<br>
-			PERCENTAGE-88%	
-			</p>
-		</div>		
+	<div class="row scrollspy" id="form">
+		<div class="col s12 l5 offset-l2">
+			<form  data-aos="flip-up" data-aos-duration="1200">
+				<h3>Contact Form</h3>
+				<div class="input-field">
+					<i class="material-icons prefix">email</i>
+					<input type="email" id="email">
+					<label for="email">Your Email</label>
+				</div>
+				<div class="input-field">
+					<i class="material-icons prefix">message</i>
+					<textarea id="message" class="materialize-textarea"></textarea>
+					<label for="message">Your Message</label>
+				</div>
+				<div class="input-field">
+					<i class="material-icons prefix">date_range</i>
+					<input type="text" class="datepicker" id="datepick">
+					<label for="datepick">Select date for query issue</label>
+				</div>
+				<center>
+					<div class="input-field">
+						<button class="btn">Submit</button>
+					</div>
+				</center>
+			</form>
+		</div>
 	</div>
-</section>
-
-<div class="row scrollspy" id="form">
-	<div class="col s12 l5 offset-l2">
-		<form>
-			<h3>Contact Form</h3>
-			<div class="input-field">
-				<i class="material-icons prefix">email</i>
-				<input type="email" id="email">
-				<label for="email">Your Email</label>
-			</div>
-			<div class="input-field">
-				<i class="material-icons prefix">message</i>
-				<textarea id="message" class="materialize-textarea"></textarea>
-				<label for="message">Your Message</label>
-			</div>
-			<div class="input-field">
-				<i class="material-icons prefix">date_range</i>
-				<input type="text" class="datepicker" id="datepick">
-				<label for="datepick">Select date for query issue</label>
-			</div>
-			<center>
-			<div class="input-field">
-				<button class="btn">Submit</button>
-			</div>
-			</center>
-		</form>
-	</div>
-</div>
 
 
-<footer class="page-footer grey darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5>More About Me</h5>
-          <p>Interested in animes,novels and other medias and work of fiction.Wish to create something productive
-          using technology.Interested in psychology,bioinformatics and genetics...</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="https://facebook.com/rvstowrn" target="_blank">Facebook</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://linkedin.com/in/rishabhverma4488" target="_blank">Linked In</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/rvstowrn" target="_blank">Github</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright grey darken-4">
-      <div class="container center-align">Made By Rishabh Verma</div>
-    </div>
-  </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="app.js"></script>
+	<footer class="page-footer grey darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5>More About Me</h5>
+					<p>Interested in animes,novels and other medias and work of fiction.Wish to create something
+						productive
+						using technology.Interested in psychology,bioinformatics and genetics...</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Connect</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="https://facebook.com/rvstowrn"
+								target="_blank">Facebook</a></li>
+						<li><a class="grey-text text-lighten-3" href="https://linkedin.com/in/rishabhverma4488"
+								target="_blank">Linked In</a></li>
+						<li><a class="grey-text text-lighten-3" href="https://github.com/rvstowrn"
+								target="_blank">Github</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright grey darken-4">
+			<div class="container center-align">Made By Rishabh Verma</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="app.js"></script>
 </body>
+
 </html>
